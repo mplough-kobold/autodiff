@@ -1,6 +1,6 @@
 name: autodiff
 
-{% set python_version = os.environ.get("PYTHON_VERSION", "3.10") %}
+{% set python_version = os.environ.get("PYTHON_VERSION", "3.12") %}
 
 channels:
   - conda-forge
@@ -30,6 +30,7 @@ dependencies:
   - pybind11-abi
   - pybind11-stubgen
   - python={{ python_version }}
+  - setuptools
   - shellcheck
   - vs2019_win-64  # [win]
   - cuda-toolkit  # [linux]
